@@ -8,7 +8,7 @@
 
 1. Clone the repository
 2. Run `bin/init.sh`
-3. Enter your jira credentials in the `secrets` folder
+3. Connect to Natera VPN before running
 4. Rejoice!
 
 ### Useful commands
