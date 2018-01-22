@@ -9,14 +9,17 @@ import * as fs from 'fs';
 (async () => {
     try {
         // Load API clients
-        const nateraPassword = fs.readFileSync('./secrets/natera_password.txt', 'utf-8').trim();
-        const nateraClient = new JiraClient('nwingham', nateraPassword, 'jira.natera.com', {
+        const jiraConfig = fs.readFileSync('secrets/jira.txt').toString().split('\n');
+        const nateraUser = jiraConfig[2];
+        const nateraPassword = jiraConfig[3];
+        const nateraClient = new JiraClient(nateraUser, nateraPassword, 'jira.natera.com', {
             points: 'customfield_10032',
             sprints: 'customfield_10035',
         });
 
-        const apsisPassword = fs.readFileSync('./secrets/apsis_password.txt', 'utf-8').trim();
-        const apsisClient = new JiraClient('niall@apsis.io', apsisPassword, 'apsislabs.atlassian.net', {
+        const apsisUser = jiraConfig[0];
+        const apsisPassword = jiraConfig[1];
+        const apsisClient = new JiraClient(apsisUser, apsisPassword, 'apsislabs.atlassian.net', {
             points: 'customfield_10021',
             sprints: 'customfield_10016',
         });
