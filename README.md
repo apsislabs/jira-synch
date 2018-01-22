@@ -20,9 +20,18 @@
 
 See the `scripts` section of `package.json` for a full list of commands.
 
+### Development Process ###
+
+Use [GitHub Flow](https://guides.github.com/introduction/flow/) and [write good commit messages](https://chris.beams.io/posts/git-commit/).
+
 ### Visual Studio Code ###
 
 **TODO**: Document optional integration with VS Code (e.g. running and debugging through the IDE).
+
+### Jira API Documentation ###
+
+- https://docs.atlassian.com/software/jira/docs/api/REST/7.1.9/
+- https://docs.atlassian.com/jira-software/REST/7.1.9/
 
 ### Managing Multiple Versions of Node.js
 

@@ -2,7 +2,8 @@
 
 ## Next Steps
 - Add usernames to the secrets file so they can be configured with passwords.  Populate them with bin/init.sh
-- Come up with a proper config format (and/or accept CLI args?) for stuff like which sprint to check against.  We may need a little utility to grab sprint IDs given an issue key if there's no easy way to get this from the website.
+- We may need a little utility to grab sprint IDs given an issue key if there's no easy way to get this from the website.
+- Come up with a proper config format (and/or accept CLI args?) for stuff like which sprint to check against.  
 - Start prototyping API to resolve diffs (including Agile API for sprint scheduling)
 - Add createIssue, updateIssue, and serialize methods to the JiraClient & children
 - Consider making everything readonly (tslint-immutable)
@@ -10,6 +11,7 @@
 - Set up automatic node version switching?
     - Or, try to make npm scripts run with nvm (note: seems impossible)?
 - Add some of our usual developer tooling, e.g. githooks, init script, post-checkout script...
+- Consider using some kind of "app account key" rather than authenticating as an individual user
 
 ## Unit Testing Backlog
 - Diff algorithm
