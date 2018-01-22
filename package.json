@@ -1,0 +1,31 @@
+{
+    "name": "jira-sync",
+    "version": "0.0.1",
+    "private": true,
+    "devDependencies": {
+        "@types/csv-stringify": "^1.4.1",
+        "@types/lodash": "^4.14.77",
+        "@types/mocha": "^2.2.43",
+        "@types/node": "^8.0.34",
+        "@types/source-map-support": "^0.4.0",
+        "mocha": "^4.0.1",
+        "nyc": "^11.2.1",
+        "source-map-support": "^0.5.0",
+        "tslint": "^5.7.0",
+        "typescript": "^2.5.3"
+    },
+    "scripts": {
+        "start": "node out/index.js",
+        "test": "npm run tslint && npm run mocha",
+        "tslint": "tslint --project .",
+        "mocha": "nyc mocha",
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "exec": "exec"
+    },
+    "dependencies": {
+        "axios": "^0.16.2",
+        "csv": "^1.1.1",
+        "lodash": "^4.17.4"
+    }
+}

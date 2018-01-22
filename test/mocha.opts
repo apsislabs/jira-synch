@@ -1,0 +1,5 @@
+--require source-map-support/register
+--ui bdd
+--colors
+--timeout 30000
+./out/**/*.spec.js

@@ -1,0 +1,17 @@
+# NPM artifacts
+node_modules/
+npm-debug.log
+
+# Compiled code
+out/
+
+# Secrets should stay secret!
+secrets/
+
+# Code coverage artifacts
+.nyc_output/
+coverage/
+
+# Application output (i.e. diff files)
+diff.csv
+diff.numbers

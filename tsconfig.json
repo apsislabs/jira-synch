@@ -1,0 +1,18 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "lib": [
+            "es2017",
+            "scripthost"
+        ],
+        "outDir": "./out",
+        "sourceMap": true,
+        "strict": true,
+        "preserveConstEnums": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
